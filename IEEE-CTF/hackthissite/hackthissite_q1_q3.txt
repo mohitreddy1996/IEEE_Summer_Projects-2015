@@ -1,0 +1,15 @@
+hackthissite
+
+question 1:
+ctrl+u or inspect elements for the web page we get the HTML code of the webpage. there we get the password in comments
+<!-- ... -->
+
+question 2:
+In the Question its mentioned the "he neglected to upload the password" 
+So blank password would be the answer
+
+queston 3:
+Again we see the source file (HTML coded)
+For the block referring to the password and submit section,when clicked on submit it should lead to password.php(it is given in the action which is hidden from the webpage)
+so we replace index.php with password.php
+submit and we get the password 

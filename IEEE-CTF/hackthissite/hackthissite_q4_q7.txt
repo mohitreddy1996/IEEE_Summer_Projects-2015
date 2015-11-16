@@ -1,0 +1,46 @@
+
+Hackthissite Write-ups
+
+Basic Missions 4:
+
+we must first inspect elements of the web page
+mail will be sent to the email id given in the value section of the link. so we change the value of the link given to the our email id to recieve the password.
+
+
+
+Basic Mission 5:
+
+After changing the value of the link we will get an error page. so we have to change the values in the attributes section.i.e form attributes.
+we have to JS injection
+
+document.forms[0].to.value="__"
+
+in this section we write our email id . password will be sent to the email.
+
+
+
+
+Basic Mission 6:
+
+When we enter any string to encrypt we get an output. so we are not given the KEY
+using ASCII table we can find out that the alphabets. so the encrypted text is formed by increasing the first character's ASCII by 0 , second character's ASCII by 1 so on...
+The text given below is the encrypted text. so we have to get the input text. so we decrease the first character's ASCII by 0, second character's ASCII by 1 and so on...
+
+
+
+Basic Mission 7:
+
+
+if we enter ;ls (UNIX COMMAND)
+it will view a months calender
+it will show additional text which will include a few links 
+.
+..
+
+cal.pl
+index.php
+k1kh31b1n55h.php
+level7.php
+
+
+so we replace cal.pl with k1kh31b1n55h.php and we hit view. it will display the password.

@@ -1,0 +1,60 @@
+Quiz 1 Write ups
+
+Crypto Q1 :
+
+Surprise! The technique you'll need for solving this one has not been covered in our sessions. By now, you should be able to look at the description of a basic cipher and be able to implement it, whether it's encryption or decryption.
+
+Cipher-text: KZGT
+Key: BBBBBCBCBBBABECD
+Hint: You might have to deal with something related to "a landform that extends above the surrounding terrain".
+
+Find out the corresponding plain-text!
+
+
+
+Ans: BLUE
+
+
+Explanation :
+
+a landform that extends above the surrounding terrain : refers to a HILL
+which means its a HILL CIPHER
+
+Sample text written in form of a vector/matrix * key = cipher text
+
+sample text = (cipher)*(key)^-1 mod 26
+
+we represent A=0,B=1,C=2...Z=25.
+
+we will get the Sample text = BLUE
+
+
+
+
+
+REVERSE ENGINEERING Q2 :
+
+https://gist.github.com/kbhat95/5729edd4e323cd7e52dc
+
+
+we open the given bin file using radare2 .
+hit
+aa - analyse
+V- visual 
+p
+then we can see a list of functions
+Go to sym.main()
+we can see that -> mov edi,0xa
+so the value 10 is taken.
+then the function sym.func is called
+then in the function sym.func
+we can see -> sub eax,1
+so the value gets reduced by 1.
+so by the jumps statements and recursive calls
+the value so formed is 10*9*8*7*6*5*4*3*2 = 10!
+
+so if the quotient when 10! is divided by input is 86400 the output gives SUCCESS!!
+
+
+
+

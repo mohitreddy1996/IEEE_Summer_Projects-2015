@@ -1,0 +1,18 @@
+bin1
+
+Description :
+
+First Reverse engineering problem
+The problem basically prints out the "hello world!"
+
+
+bin2 
+
+Description :
+
+The second problem takes the input from the user 
+if the first number is 3 and the second number is 4 
+it prints out Nope.
+if the input is not a pythagorean triplet then it prints out "Fail!"
+else it will print out "Success!"
+
